@@ -1,0 +1,200 @@
+<html lang="vi"
+    data-smartux-useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="favicon.ico">
+    <title>VNPT GoMeet Portal</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script type="text/javascript" async="" src="https://console-smartux.vnpt.vn/sdk/web/minify.min.js"></script>
+    <script type="text/javascript" async="" src="https://console-smartux.vnpt.vn/sdk/web/core-track.js"></script>
+    <script type="text/javascript" async="" charset="utf-8"
+        src="https://www.gstatic.com/recaptcha/releases/hfUfsXWZFeg83qqxrK27GB8P/recaptcha__en.js"
+        crossorigin="anonymous"
+        integrity="sha384-CUWl3AwpNax4J2/ffIDxMr+sLnEFg8pkj5QqZtMtJZtrL5bS5QTkIoza4qZakWjL"></script>
+    <script src="../environment.js"></script>
+    <script src="https://gomeetv3-dev.vnptit.vn/recording/test.js" crossorigin="anonymous" prefer=""></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf026YhAAAAAFgYkAi81jKpLvixk4DcK5g6n5r_"></script>
+    <script>if (!location.href.startsWith("http://localhost")) {
+            var VNPT = VNPT || {};
+            VNPT.q = VNPT.q || [];
+
+            VNPT.app_key = '916339a343be58475f6d2d29c80f73f981b1ba8e';
+
+            VNPT.url = 'https://console-smartux.vnpt.vn';
+
+            VNPT.q.push(['track_sessions']);
+            VNPT.q.push(['track_pageview']);
+            VNPT.q.push(['track_clicks']);
+            VNPT.q.push(['track_scrolls']);
+            VNPT.q.push(['track_errors']);
+            VNPT.q.push(['track_links']);
+            VNPT.q.push(['track_forms']);
+            VNPT.q.push(['collect_from_forms']);
+
+            (function () {
+                const paths = ['https://console-smartux.vnpt.vn/sdk/web/core-track.js', 'https://console-smartux.vnpt.vn/sdk/web/minify.min.js'];
+                for (let i in paths) {
+                    var cly = document.createElement('script'); cly.type = 'text/javascript';
+                    cly.async = true;
+                    cly.src = paths[i];
+                    cly.onload = i == 0 ? function () { VNPT.init() } : function () { window.minify = require("html-minifier").minify; };
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+                }
+            })();
+        }</script>
+    <script defer="defer" src="/app/js/chunk-vendors.204f7d5a.js"></script>
+    <script defer="defer" src="/app/js/app.09c43c0c.js"></script>
+    <link href="/app/css/chunk-vendors.d59b8d5c.css" rel="stylesheet">
+    <link href="/app/css/app.a993093b.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body><noscript><strong>We're sorry but vnpt-econference-portal-customer doesn't work properly without JavaScript
+            enabled. Please enable it to continue.</strong></noscript>
+    <div id="app" class="wrapper">
+        <nav data-v-c2cd61e4="" id="nav" class="navbar navbar-expand navbar-dark fixed-top bg-primary py-1"><a
+                data-v-c2cd61e4="" href="#/" class="navbar-brand active"><img data-v-c2cd61e4=""
+                    src="images/logoVNPT.png" alt="Logo" width="28px" class="mr-1"> VNPT GoMeet Portal </a><button
+                data-v-c2cd61e4="" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"><span data-v-c2cd61e4="" class="navbar-toggler-icon"></span></button>
+            <div data-v-c2cd61e4="" id="navbarsExample04" class="collapse navbar-collapse">
+                <ul data-v-c2cd61e4="" class="navbar-nav mr-auto align-items-center">
+                    <li data-v-c2cd61e4="" class="nav-item"><a data-v-c2cd61e4="" href="#/dashboard"
+                            class="nav-link">Dashboard</a></li><!----><!----><!---->
+                    <li data-v-c2cd61e4="" class="nav-item"><a data-v-c2cd61e4="" href="#/meetings"
+                            class="nav-link">Cuộc họp</a></li>
+                    <li data-v-c2cd61e4="" class="nav-item"><a data-v-c2cd61e4="" href="#/contacts"
+                            class="nav-link">Danh bạ</a></li>
+                    <li data-v-c2cd61e4="" class="nav-item"><a data-v-c2cd61e4="" href="#/customer-user-accounts"
+                            class="nav-link">Quản lý tài khoản</a></li><!---->
+                    <li data-v-c2cd61e4="" class="nav-item">
+                        <div data-v-c2cd61e4="" class="dropdown b-dropdown btn-group" id="__BVID__10"><!----><button
+                                aria-haspopup="menu" aria-expanded="false" type="button"
+                                class="btn dropdown-toggle btn-link nav-link text-decoration-none"
+                                id="__BVID__10__BV_toggle_">Báo cáo</button>
+                            <ul role="menu" tabindex="-1" class="dropdown-menu shadow"
+                                aria-labelledby="__BVID__10__BV_toggle_"><!----><!----><!---->
+                                <li data-v-c2cd61e4="" role="presentation"><a href="#/reports/meeting-detail-report"
+                                        class="dropdown-item" role="menuitem" target="_self">Báo cáo chi tiết cuộc
+                                        họp</a></li>
+                            </ul>
+                        </div>
+                    </li><!---->
+                </ul>
+                <ul data-v-c2cd61e4="" class="navbar-nav align-items-center"><!---->
+                    <li data-v-c2cd61e4="" class="nav-item"><a data-v-c2cd61e4="" href="#/meetings/new"
+                            class="nav-link show-up"><svg data-v-c2cd61e4="" viewBox="0 0 16 16" width="1em"
+                                height="1em" focusable="false" role="img" aria-label="plus lg"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi-plus-lg mr-2 icon-size b-icon bi">
+                                <g data-v-c2cd61e4="">
+                                    <path
+                                        d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z">
+                                    </path>
+                                </g>
+                            </svg> Tạo lịch cuộc họp</a></li>
+                    <li data-v-c2cd61e4="" class="nav-item"><button data-v-c2cd61e4="" class="nav-link show-up"
+                            style="cursor: pointer;"><svg data-v-c2cd61e4="" viewBox="0 0 16 16" width="1em"
+                                height="1em" focusable="false" role="img" aria-label="lightning charge"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi-lightning-charge mr-2 icon-size b-icon bi">
+                                <g data-v-c2cd61e4="">
+                                    <path
+                                        d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z">
+                                    </path>
+                                </g>
+                            </svg> Tạo nhanh cuộc họp</button></li>
+                    <li data-v-c2cd61e4="" class="nav-item">
+                        <div data-v-c2cd61e4="" class="dropdown b-dropdown btn-group" id="__BVID__15"><!----><button
+                                aria-haspopup="menu" aria-expanded="false" type="button"
+                                class="btn dropdown-toggle btn-link nav-link text-decoration-none"
+                                id="__BVID__15__BV_toggle_"><svg data-v-c2cd61e4="" viewBox="0 0 16 16" width="1em"
+                                    height="1em" focusable="false" role="img" aria-label="person"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi-person mr-1 b-icon bi">
+                                    <g data-v-c2cd61e4="">
+                                        <path
+                                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z">
+                                        </path>
+                                    </g>
+                                </svg> GoMeet RnD </button>
+                            <ul role="menu" tabindex="-1" class="dropdown-menu shadow"
+                                aria-labelledby="__BVID__15__BV_toggle_">
+                                <li data-v-c2cd61e4="" role="presentation"><a href="#/account" class="dropdown-item"
+                                        role="menuitem" target="_self">Quản lý tài khoản</a></li>
+                                <li data-v-c2cd61e4="" role="presentation">
+                                    <hr data-v-c2cd61e4="" role="separator" aria-orientation="horizontal"
+                                        class="dropdown-divider">
+                                </li>
+                                <li data-v-c2cd61e4="" role="presentation"><button role="menuitem" type="button"
+                                        class="dropdown-item">Thoát</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <div data-v-c2cd61e4="" class="locale-changer ml-3">
+                        <div data-v-c2cd61e4="" class="dropdown b-dropdown btn-group" id="__BVID__20"><!----><button
+                                aria-haspopup="menu" aria-expanded="false" type="button"
+                                class="btn dropdown-toggle btn-link p-0 text-white text-decoration-none dropdown-toggle-no-caret"
+                                id="__BVID__20__BV_toggle_"><img data-v-c2cd61e4="" src="icon/flag-vn.png"
+                                    class="emoji"></button>
+                            <ul role="menu" tabindex="-1" class="dropdown-menu"
+                                aria-labelledby="__BVID__20__BV_toggle_">
+                                <li data-v-c2cd61e4="" role="presentation"><a role="menuitem" href="#" target="_self"
+                                        class="dropdown-item"><img data-v-c2cd61e4="" src="icon/flag-vn.png" alt="🇻🇳"
+                                            class="emoji"> Tiếng Việt </a></li>
+                                <li data-v-c2cd61e4="" role="presentation"><a role="menuitem" href="#" target="_self"
+                                        class="dropdown-item"><img data-v-c2cd61e4="" src="icon/flag-en.png" alt="🇬🇧"
+                                            class="emoji"> English </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <main data-v-9c52d268="" role="main">
+            <div data-v-9c52d268="" class="container">
+                <div data-v-9c52d268="" class="text-center py-5">
+                    <div data-v-9c52d268="" class="download-container"><img data-v-9c52d268="" src="images/app-logo.jpg"
+                            alt="app logo" class="mb-4" style="width: 256px; height: 256px;">
+                        <div data-v-9c52d268="" class="mb-3"><a data-v-9c52d268=""
+                                href="gomeetv3://gomesainterk06.vnpt.vn?roomId=c21edddf430d20df1a55611f028a28e3&amp;accessCode=YUFRGW&amp;v=rd&amp;name="
+                                target="_self" class="btn btn-primary btn-block">Mở trong ứng dụng</a></div>
+                        <div data-v-9c52d268=""><a data-v-9c52d268=""
+                                href="https://apps.apple.com/vn/app/vnpt-gomeet-v3/id1662423818" target="_self"
+                                class="btn btn-success btn-block">Tải ứng dụng</a></div>
+                    </div><!---->
+                </div><!----><!---->
+            </div>
+        </main>
+        <footer data-v-b8d5fda8="" class="bg-light border-top">
+            <div data-v-b8d5fda8="" class="container">
+                <div data-v-b8d5fda8="" class="d-flex flex-row align-items-center justify-content-between">
+                    <div data-v-b8d5fda8=""><a data-v-b8d5fda8="" href="/" target="_blank">Trang chủ Portal</a></div>
+                    <div data-v-b8d5fda8="" class="text-muted mb-2 text-right">Sản phẩm của VNPT-IT <br
+                            data-v-b8d5fda8="">Phiên bản: 3.0</div>
+                </div>
+            </div>
+        </footer><!---->
+    </div>
+    <div>
+        <div class="grecaptcha-badge" data-style="bottomright"
+            style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+            <div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation"
+                    name="a-1kn9xtiq8h9x" frameborder="0" scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lf026YhAAAAAFgYkAi81jKpLvixk4DcK5g6n5r_&amp;co=aHR0cHM6Ly9nb21lc2FpbnRlcmswNi52bnB0LnZuOjQ0Mw..&amp;hl=en&amp;v=hfUfsXWZFeg83qqxrK27GB8P&amp;size=invisible&amp;cb=u6zb41shaojf"></iframe>
+            </div>
+            <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+                class="g-recaptcha-response"
+                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+        </div><iframe style="display: none;"></iframe>
+    </div>
+</body>
+
+</html>
